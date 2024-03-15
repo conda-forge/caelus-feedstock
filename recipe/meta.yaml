@@ -1,5 +1,5 @@
 {% set name = "caelus" %}
-{% set version = "2.0.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name | lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sayerhs/cpl/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7de0250517fc5b133c9e0b90a43a7ed7beced516ee7bec8d14bdfee48805b47b
+  sha256: 16d24b1a3dbffb0fbf10b853c0c23b757384e33a61b305b479ab217f1731dea3
 
 build:
   number: 0
@@ -21,12 +21,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.10
     - pip
     - setuptools
 
   run:
-    - python >=3.6
+    - python >=3.10
     - six
     - numpy
     - matplotlib-base
@@ -34,6 +34,8 @@ requirements:
     - ply
     - pytz
     - jinja2
+    - vtk
+    - pyvista
 
 test:
   requires:
@@ -44,7 +46,7 @@ test:
     - caelus
 
 about:
-  home: https://caelus-cml.com
+  home: https://github.com/sayerhs/cpl/
   license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE.txt
