@@ -1,5 +1,5 @@
 {% set name = "caelus" %}
-{% set version = "3.0.0" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name | lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sayerhs/cpl/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 16d24b1a3dbffb0fbf10b853c0c23b757384e33a61b305b479ab217f1731dea3
+  sha256: 444021b4b4a651025487a7b341715ea9a874c0280ca2627eee3d64887f7427ad
 
 build:
   number: 0
