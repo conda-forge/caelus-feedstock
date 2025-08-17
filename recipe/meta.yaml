@@ -1,5 +1,5 @@
 {% set name = "caelus" %}
-{% set version = "4.0.1" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name | lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/sayerhs/cpl/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 17b74a7ea47e6c9aa9be3ff678cb23094e00bb17032e789b7a168aae1f7ff619
+  sha256: 0c8597adbbe2f5d47eec1b3b08647c36a9f804b06fa57dddc5cbc3451c038598
 
 build:
   number: 0
@@ -34,10 +34,7 @@ requirements:
     - ply
     - pytz
     - jinja2
-    - vtk
-    - pyvista
     - pandas
-    - scipy
 
 test:
   requires:
